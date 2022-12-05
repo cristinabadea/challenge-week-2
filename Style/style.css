@@ -35,3 +35,26 @@ header nav {
   text-decoration: none;
   color: black;
 }
+
+/* Hero Section style*/
+
+.hero-banner div {
+  height: 180px;
+  padding: 20px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(206, 195, 244);
+}
+
+.hero-banner div h2 {
+  background-color: rgb(182, 166, 241);
+  border: 2px solid rgb(127, 109, 190);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 60px;
+  margin-left: 700px;
+  padding: 7px;
+}
