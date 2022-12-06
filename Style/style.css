@@ -1,7 +1,10 @@
 /** @format */
-
+:root {
+  --lilac: rgb(227, 223, 242);
+  --lilacBorder: 5px solid rgb(127, 109, 190);
+}
 * {
-  background-color: rgb(227, 223, 242);
+  background-color: var(--lilac);
   scroll-behavior: smooth;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -13,29 +16,40 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(206, 195, 244);
+  background-color: var(--lilac);
 }
 
 .header-col {
-  background-color: rgb(182, 166, 241);
-  border: 2px solid rgb(127, 109, 190);
-  border-radius: 5px;
+  background-color: var(--lilac);
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 30px;
   margin-left: 30px;
 }
 header h1 {
+  background-color: var(--lilac);
+  border: var(--lilacBorder);
   padding: 0 10px 0 10px;
+}
+
+header h1:hover {
+  background-color: rgb(127, 109, 190);
+  color: aliceblue;
 }
 
 header nav {
   padding: 10px;
 }
 .header-col a {
-  background-color: rgb(182, 166, 241);
+  background-color: var(--lilac);
   text-decoration: none;
   color: black;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.header-col a:hover {
+  color: aliceblue;
 }
 
 /* Hero Section style*/
@@ -50,8 +64,8 @@ header nav {
 }
 
 .hero-banner div h2 {
-  background-color: rgb(182, 166, 241);
-  border: 2px solid rgb(127, 109, 190);
+  background-color: var(--lilac);
+  border: var(--lilacBorder);
   border-radius: 5px;
   color: rgb(0, 0, 0);
   font-size: 14px;
@@ -67,7 +81,7 @@ header nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .page-section {
@@ -80,7 +94,7 @@ header nav {
   padding-right: 10px;
   margin-top: 25px;
   text-align: end;
-  border-right: 3px solid rgb(127, 109, 190);
+  border-right: var(--lilacBorder);
   font-size: 42px;
 }
 
@@ -89,18 +103,156 @@ header nav {
   flex: 3;
   display: flex;
   flex-direction: row;
-  padding: 25px 25px 0 25px;
+  margin-top: 25px;
+  margin-left: 20px;
 }
 
 .about-me img {
-  padding-right: 10px;
   max-width: 20%;
+  border: var(--lilacBorder);
 }
 
 .about-me p {
   font-size: 14px;
-  margin-left: 5px;
+  padding: 10px;
   text-align: justify;
 }
 
 /* Main - Work section style */
+.my-work {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+.pro-1 {
+  display: block;
+  background-image: url(../Images/02-portfolio-1.jpg);
+  width: 100%;
+  height: 500px;
+  border: var(--lilacBorder);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.pro-1-text {
+  position: absolute;
+  bottom: 10px;
+  border-top: var(--lilacBorder);
+  border-right: var(--lilacBorder);
+  border-bottom: var(--lilacBorder);
+  margin-bottom: 10px;
+  padding: 3px 8px 3px 0;
+}
+
+.pro-1-text h3 {
+  font-size: 20px;
+}
+.pro-1-text p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.mini-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pro-2 {
+  background-image: url(../Images/02-portfolio-2.jpg);
+}
+.pro-3 {
+  background-image: url(../Images/02-portfolio-3.jpg);
+}
+.pro-4 {
+  background-image: url(../Images/02-portfolio-4.jpg);
+}
+.pro-5 {
+  background-image: url(../Images/02-run-buddy.jpg);
+}
+
+.pro-2,
+.pro-3,
+.pro-4,
+.pro-5 {
+  width: 45%;
+  height: 250px;
+  background-size: cover;
+  border: var(--lilacBorder);
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+.pro-2-text,
+.pro-3-text,
+.pro-4-text,
+.pro-5-text {
+  position: absolute;
+  bottom: 10px;
+  border-top: var(--lilacBorder);
+  border-right: var(--lilacBorder);
+  border-bottom: var(--lilacBorder);
+  margin-bottom: 10px;
+  padding: 3px 8px 3px 0;
+}
+
+.pro-2-text h3,
+.pro-3-text h3,
+.pro-4-text h3,
+.pro-5-text h3 {
+  font-size: 20px;
+}
+.pro-2-text p,
+.pro-3-text p,
+.pro-4-text p,
+.pro-5-text p {
+  font-size: 16px;
+  text-align: center;
+}
+/* Main - Contact section */
+.my-info {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+.my-info a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  border-bottom: var(--lilacBorder);
+  padding: 10px;
+}
+.my-info a:hover {
+  color: aliceblue;
+}
+
+/* Main - Resume style */
+.my-resume {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+}
+.my-resume p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+  border-bottom: var(--lilacBorder);
+  padding: 10px;
+}
+
+.my-resume p a {
+  text-decoration: none;
+  color: rgb(127, 109, 190);
+}
+
+/* Media query */
