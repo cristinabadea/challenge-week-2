@@ -1,78 +1,73 @@
 <!-- @format -->
 
-# Unit 2 Challenge: Portfolio
+# Challenge Week 2
 
-## Your Task
+## Description
 
-This week, you'll build a portfolio page, which you can add to as the course progresses.
+I have created a website portfolio from scratch using HTML and CSS files in order to expose and organise my present and future projects.
+It contains 5 parts: the header with my name and the navigation bar, the hero banner with a short description and my avatar, the work section which contains the projects I've already implemented and some placeholders for the next, the contact section where I included my details and the Resume section where I attached the CV.
 
-A portfolio of work can showcase your skills and talents to employers looking to fill a part-time or full-time position. An effective portfolio highlights your strongest work as well as the thought processes behind it. Students who have portfolios with deployed web applications (meaning they are live on the web) are typically very successful in their career search after the boot camp. This last point can’t be stressed enough: having several deployed projects is a minimum requirement to receive an initial interview at many companies.
+-
 
-With these points in mind, in this challenge you’ll set yourself up for future success by applying the core skills you've recently learned: flexbox, media queries, and CSS variables. You'll get to practice your new skills while creating something that you will use during your job search. It’s a win-win that you'll likely be grateful for in the future!
+## Installation
 
-**Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
+N/A
 
-## Acceptance Criteria
+## Usage
 
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+### Header:
 
-- When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you
-- When one of the links in the navigation is clicked then the UI scrolls to the corresponding section
-- When viewing the section about your work then the section contains titled images of your applications
-- When presented with the your first application then that application's image should be larger in size than the others
-- When images of the applications are clicked then the user is taken to that deployed application
-- When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
+- the style will change when hovering over the name;
+- web sections are easily accesible from the navigation bar, which was also styled when hovering over;
+- responsive when accessing from different devices;
 
-## Mock-Up
+### Hero:
 
-The following animation shows the web application's appearance and functionality:
+- responsive when accessing from different devices;
 
-![portfolio demo](./images/01-css-challenge-demo.gif)
+### About me:
 
-Feel free to use your own colors and images.
+- implemented with flex;
+- responsive when accessing from different devices;
 
-## Grading Requirements
+### Work:
 
-This challenge is graded based on the following criteria:
+- implemented with flex;
+- the style will change when hovering over the projects;
+- when clicking on a project it opens the deployed project (or goole page for the future ones);
+- responsive when accessing from different devices;
 
-### Technical Acceptance Criteria: 40%
+### Contact:
 
-- Satisfies all of the above acceptance criteria.
+- implemented with flex;
+- the style will change when hovering over the details;
+- responsive when accessing from different devices;
 
-### Deployment: 32%
+### Resume:
 
-- Application deployed at live URL.
+- when clicking on the paragraph it opens the Resume in PDF format;
+- responsive when accessing from different devices;
 
-- Application loads with no errors.
+## Credits
 
-- Application GitHub URL submitted.
+N/A
 
-- GitHub repository contains application code.
+## License
 
-### Application Quality: 15%
+MIT License
 
-- Application resembles the mock-up functionality provided in the challenge instructions.
+## Badges
 
-### Repository Quality: 13%
+N/A
 
-- Repository has a unique name.
+## Features
 
-- Repository follows best practices for file structure and naming conventions.
+N/A
 
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## How to Contribute
 
-- Repository contains multiple descriptive commit messages.
+N/A
 
-- Repository contains quality readme with description, screenshot, link to deployed application.
+## Tests
 
-## Review
-
-You are required to submit BOTH of the following for review:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
----
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+N/A
